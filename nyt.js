@@ -4,10 +4,12 @@
 $(document).ready(function(){
 
     // var queryURL;
-    var query = "obama";
-    var beginDate = "";
-    var endDate = "";
-    var numResults = "1";
+    var query = $("#search-term");
+    var beginDate = $("#begin-date");
+    var endDate = $("#end-date");
+    var numResults = $(".form-control").val();
+
+    console.log(numResults);
 
     
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
