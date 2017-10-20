@@ -4,20 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>NY Times Search</title>
   </head>
-    <body>
-    <div id="header"><h1><span class="glyphicons glyphicons-newspaper"></span>New York Times Search</h1></div>
+  <body>
+    <div id="header"><h1><i class="fa fa-newspaper-o"></i> New York Times Search</h1></div>
       <div id="search-wrapper">
-        <div id="search-parameters">Search Parameters</div>
+        <div id="search-parameters"><i class="fa fa-list-alt"></i> Search Parameters</div>
         <form>
           <div class="form-group" id="search-term">
               <label for="">Search Term</label>
-              <input type="text" class="t" id="" placeholder="Your search">
+              <input type="text" class="form-control" id="search-query" placeholder="Your search">
             </div>
           <div id="records-retrieve">
-            <label>Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label>Number of Results</label>
+            <select class="form-control" id="num-results">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -32,11 +33,11 @@
           </div>
           <div class="form-group" id="search-term">
               <label for="">Start Year (Optional)</label>
-              <input type="text" class="form-control" id="begin-date" placeholder="Your search">
+              <input type="text" class="form-control" id="begin-date" placeholder="YYYY">
             </div>
           <div class="form-group" id="search-term">
               <label for="">End Year (Optional)</label>
-              <input type="text" class="form-control" id="end-date" placeholder="Your search">
+              <input type="text" class="form-control" id="end-date" placeholder="YYYY">
             </div>
           <button id="search" class="btn btn-secondary">Submit</button>
           <button id="clear" class="btn btn-secondary">Clear Results</button>
@@ -45,19 +46,12 @@
       <div id="results-wrapper">
         <div id="article-result">Top Articles</div>
         <div id ="articles"></div>
-
-
-
-
-
       </div>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="nyt.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="nyt.js" type="text/javascript"></script>
   </body>
 </html>
