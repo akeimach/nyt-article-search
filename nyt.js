@@ -1,16 +1,27 @@
 
 
 
-$(document).ready(function(){
+$("#search").on("click", function(event) {
+
+
+    event.preventDefault();
+
+    var query;
+    var beginDate;
+    var endDate;
+    var numResults;
 
     // var queryURL;
-    var query = $("#search-term");
-    var beginDate = $("#begin-date");
-    var endDate = $("#end-date");
-    var numResults = $(".form-control").val();
-
+    query = $(".form-control").val();
+    beginDate = $("#begin-date").val();
+    endDate = $("#end-date").val();
+    numResults = $("#exampleFormControlSelect1").val();
     console.log(numResults);
+    console.log(query);
+    console.log(beginDate);
+    console.log(endDate);
 
+    console.log($('form').serialize());
     
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     
@@ -36,7 +47,7 @@ $(document).ready(function(){
 
     $.ajax({
         url: queryURL,
-        method: "GET",
+        method: "GET"
     }).done(function(result) {
         console.log(result);
 

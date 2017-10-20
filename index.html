@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <title>NY Times Search</title>
   </head>
+    <body>
     <div id="header"><h1><span class="glyphicons glyphicons-newspaper"></span>New York Times Search</h1></div>
       <div id="search-wrapper">
         <div id="search-parameters">Search Parameters</div>
         <form>
           <div class="form-group" id="search-term">
               <label for="">Search Term</label>
-              <input type="text" class="form-control" id="" placeholder="Your search">
+              <input type="text" class="t" id="" placeholder="Your search">
             </div>
           <div id="records-retrieve">
             <label>Example select</label>
@@ -31,15 +32,16 @@
           </div>
           <div class="form-group" id="search-term">
               <label for="">Start Year (Optional)</label>
-              <input type="text" class="form-control" id="" placeholder="Your search">
+              <input type="text" class="form-control" id="begin-date" placeholder="Your search">
             </div>
           <div class="form-group" id="search-term">
               <label for="">End Year (Optional)</label>
-              <input type="text" class="form-control" id="" placeholder="Your search">
+              <input type="text" class="form-control" id="end-date" placeholder="Your search">
             </div>
           <button id="search" class="btn btn-secondary">Submit</button>
           <button id="clear" class="btn btn-secondary">Clear Results</button>
         </form>
+      </div>
       <div id="results-wrapper">
         <div id="article-result">Top Articles</div>
         <div id ="articles"></div>
@@ -51,9 +53,11 @@
       </div>
 
 
-  <body>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="nyt.js"></script>
   </body>
 </html>
