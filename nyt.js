@@ -48,8 +48,6 @@ $(document).ready(function(){
 
             for (var i = 0; i < numResults; i++) {
 
-                console.log(resultArray[i]);
-
                 var title = resultArray[i].headline.main;
                 var author = resultArray[i].byline.original;
                 var link = resultArray[i].web_url;
